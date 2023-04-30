@@ -1,0 +1,99 @@
+:root {
+  --blue: #0e61c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header>nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 8vh;
+  padding: 0px 10%;
+}
+
+header>nav>.logo {
+  font-size: 2em;
+  color: #ff9d00;
+  font-family: Vivaldi;
+}
+
+header>nav>ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+header>nav>ul>li:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  /* background: linear-gradient(to right, #ffd700, #b8860b); */
+  background: linear-gradient(60deg, #ffd700, #e6b800, #cc9900, #b36b00, #995200);
+
+
+  border-radius: 25px;
+}
+
+
+header>.image {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Madagascar en Photos _ Tamatave (Toamasina).jpeg");
+  background-position: center;
+
+}
+
+.blur {
+  position: absolute;
+  /* positionne l'élément au-dessus de l'élément .image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  /* ajoute l'effet de flou */
+  z-index: -1;
+  /* positionne l'élément en arrière-plan */
+}
+
+.presentation {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: auto 0;
+}
+
+.presentation>h1 {
+  font-size: 8em;
+
+}
+
+p {
+  font-size: xx-large;
+  color: #cfcfcf;
+}
