@@ -1,5 +1,6 @@
 :root {
   --blue: #0e61c7;
+  --golden:#ff9d00;
 }
 
 * {
@@ -28,7 +29,7 @@ header>nav {
 
 header>nav>.logo {
   font-size: 2em;
-  color: #ff9d00;
+  color: var(--golden);
   font-family: Vivaldi;
 }
 
@@ -42,7 +43,7 @@ header>nav>ul {
 
 header>nav>ul>li:hover {
   cursor: pointer;
-  color: var(--blue);
+  color: var(--golden);
 }
 
 .button {
